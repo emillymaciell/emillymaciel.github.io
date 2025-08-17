@@ -18,22 +18,22 @@
         <nav class="header__nav">
             <ul class="menu menu--principal">
                 <li class="menu__item">
-                    <a class="menu__link active" href="home">
+                    <a class="menu__link active" href="#home">
                         <span class="menu__text">Home</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="projetos">
+                    <a class="menu__link" href="#projetos">
                         <span class="menu__text">Projetos</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="formacao">
+                    <a class="menu__link" href="#formacao">
                         <span class="menu__text">Formação</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="contato">
+                    <a class="menu__link" href="#contato">
                         <span class="menu__text">Contato</span>
                     </a>
                 </li>
@@ -51,25 +51,25 @@
     <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
-                <a class="menu__link active" href="home">
+                <a class="menu__link active" href="#home">
                     <i class="menu__icon bi bi-house-door"></i>
                     <span class="menu__text">Home</span>
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="projetos">
+                <a class="menu__link" href="#projetos">
                     <i class="menu__icon bi bi-file-earmark-code"></i>
                     <span class="menu__text">Projetos</span>
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="formacao">
+                <a class="menu__link" href="#formacao">
                     <i class="menu__icon bi bi-mortarboard"></i>
                     <span class="menu__text">Formação</span>
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="contato">
+                <a class="menu__link" href="#contato">
                     <i class="menu__icon bi bi-chat-right"></i>
                     <span class="menu__text">Contato</span>
                 </a>
@@ -91,15 +91,45 @@
                 </li>
             </ul>
 
-            <button class="btn btn--primary">
-                <span>Ver Projetos</span>
-                <i class="bi bi-arrow-down-right"></i>
-            </button>
+            <a href="#projetos">
+                <button class="btn btn--primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
         </div>
 
-        <div class="main__content2">
-
-        </div>
+        <section id="home" class="about">
+            <div class="about__content1">
+                <img class="about__photo" src="./assets/images/IMG_4881.JPG">
+                <div class="about__description">
+                    <h2>Sobre mim</h2>
+                    <p>Sou Emilly Maciel, estudante de Engenharia de Software, apaixonada por tecnologia e resolução de
+                        problemas. Desde o início da minha jornada, tenho focado em aprofundar meus conhecimentos em
+                        linguagens como Java, Python e JavaScript , além de explorar áreas como análise de dados e
+                        inteligência artificial por meio de cursos de capacitação. Sou detalhista, dedicada e busco
+                        aplicar minhas habilidades para criar soluções eficientes e inovadoras.
+                    </p>
+                    <div class="about__icons">
+                        <i class="bi bi-translate"></i>
+                        <span>Inglês: Avançado</span>
+                    </div>
+                    <div class="description__buttons">
+                        <a href="https://www.linkedin.com/in/emilly-maciell/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Conecte-se Comigo</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+                        <a href="./assets/documents/CV_Emilly-Maciel.pdf" target="_blank">
+                            <button class="btn">
+                                <span>Currículo</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <section class="skills">
@@ -124,6 +154,311 @@
                 <img class="skills__logo" src="assets/images/skills/git-original 1.png" alt="Logo Git">
             </li>
         </ul>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2>Projetos</h2>
+        <div class="projects__container">
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projects/project-youtube.png" alt="Print Projeto YouTube">
+                <div class="card__body">
+                    <h3 class="card__title">Clone Responsivo da Página do YouTube</h3>
+                    <p class="card__description">Página do YouTube implementando um layout Mobile-First totalmente
+                        responsivo, utilizando um sistema híbrido de CSS Grid e Flexbox.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">
+                            Layout em grade para a galeria de vídeos;
+                        </li>
+                        <li class="card__item">
+                            Menu latera flexível e responsivo;
+                        </li>
+                        <li class="card__item">
+                            Tipografia fluida com a função clamp().
+                        </li>
+                    </ul>
+
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/skills/html5-original 1.png" alt="Logo HTML">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/skills/css3-original 1.png" alt="Logo CSS">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://github.com/emillymaciell/bootcamp-santander-frontend/tree/main/youtube">
+                            <button class="btn btn--primary">
+                                <span>Repositório</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card card--reverse">
+                <img class="card__cover" src="assets/images/projects/project-discord.png" alt="Print Projeto Discord">
+                <div class="card__body">
+                    <h3 class="card__title">Clone Responsivo da Landing Page do Discord</h3>
+                    <p class="card__description">Recriação fiel e totalmente responsiva da landing page do Discord. O
+                        projeto foi construído com a abordagem Mobile-First, garantindo uma excelente experiência em
+                        celulares. </p>
+
+                    <ul class="card__list">
+                        <li class="card__item">
+                            Abordagem Mobile-First, garantindo uma experiência otimizada em celulares;
+                        </li>
+                        <li class="card__item">
+                            Uso de CSS Flexbox para alinhamento e organização dos elementos;
+                        </li>
+                        <li class="card__item">
+                            Layout em zigue-zague para seções de conteúdo na versão desktop;
+                        </li>
+                        <li class="card__item">
+                            Recriação fiel do design, demonstrando atenção aos detalhes.
+                        </li>
+                    </ul>
+
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/skills/html5-original 1.png" alt="Logo HTML">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/skills/css3-original 1.png" alt="Logo CSS">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://emillymaciell.github.io/LandingPage-Discord/">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/emillymaciell/LandingPage-Discord.git">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projects/project-pokedex.png" alt="Print Projeto Pokedex">
+                <div class="card__body">
+                    <h3 class="card__title">Pokédex Interativa com JavaScript e API</h3>
+                    <p class="card__description">Pokedex interativa que consome a PokéAPI para carregar e exibir uma
+                        lista de Pokémon com paginação. A interface permite clicar em cada Pokémon para visualizar um
+                        painel de detalhes com suas estatísticas, habilidades e tipos. O design é responsivo, garantindo
+                        uma boa experiência de uso em diferentes tamanhos de tela.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">
+                            Consumo da PokéAPI para carregar dados dos Pokémon de forma dinâmica;
+                        </li>
+                        <li class="card__item">
+                            Sistema de paginação para navegar pela lista completa;
+                        </li>
+                        <li class="card__item">
+                            Painel de detalhes com estatísticas, tipos e habilidades ao clicar em um Pokémon;
+                        </li>
+                        <li class="card__item">
+                            Design responsivo que se adapta a desktops e dispositivos móveis
+                        </li>
+                    </ul>
+
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/skills/html5-original 1.png" alt="Logo HTML">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/skills/css3-original 1.png" alt="Logo CSS">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/skills/javascript-original 1.png"
+                                alt="Logo JavaScript">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://emillymaciell.github.io/pokedex/">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/emillymaciell/pokedex.git">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/emillymaciell">
+                <button class="btn btn--primary btn--projects">
+                    <span>Ver Todos os Projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section id="formacao" class="about__content2">
+        <div class="col1">
+            <div class="row1">
+                <h3>Formação</h3>
+                <h4>Engenharia de Software</h4>
+                <span>Jan. 2024 - Dez. 2027</span>
+                <div class="about__icons">
+                    <i class="bi bi-bank"></i>
+                    <span>Universidade Católica do Salvador</span>
+                </div>
+                <div class="about__icons">
+                    <i class="bi bi-mortarboard"></i>
+                    <span>Bacharelado (Cursando)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col2">
+            <h3>Cursos</h3>
+            <div id="accordion">
+                <div class="accordion__item active">
+                    <button class="accordion__header start">
+                        <span>Programação de Computadores com Python</span>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body">
+                        <p>
+                            Centro de Pesquisa e Capacitação Tomorrow | UFBA
+                        </p>
+                        <p>
+                            Curso focado nos fundamentos da linguagem Python, abordando desde a sintaxe básica e lógica
+                            de programação até a manipulação de estruturas de dados essenciais.
+                        </p>
+                        <ul class="card__list">
+                            <li class="card__item">Lógica de programação e construção de algoritmos;</li>
+                            <li class="card__item"> Manipulação de listas, tuplas e dicionários;</li>
+                            <li class="card__item">Desenvolvimento e utilização de funções.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__header">
+                        <span>Java OO: Orientação a Objetos com Java</span>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body">
+                        <p>
+                            Centro de Pesquisa e Capacitação Tomorrow | UFBA
+                        </p>
+                        <p>
+                            Capacitação em programação orientada a objetos com Java, explorando conceitos fundamentais
+                            da POO e boas práticas de desenvolvimento.
+                        </p>
+                        <ul class="card__list">
+                            <li class="card__item">Criação e manipulação de classes e objetos;</li>
+                            <li class="card__item">Aplicação de herança, polimorfismo e encapsulamento;</li>
+                            <li class="card__item">Estruturação de projetos utilizando princípios da orientação a
+                                objetos.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__header">
+                        <span>Inteligência Artificial na Prática</span>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body">
+                        <p>
+                            Centro de Pesquisa e Capacitação Tomorrow | UFBA
+                        </p>
+                        <p>
+                            Capacitação voltada para o uso prático da inteligência artificial aplicada em dados,
+                            promovendo a compreensão de conceitos básicos e sua aplicação em problemas reais.
+                        </p>
+                        <ul class="card__list">
+                            <li class="card__item">Introdução à Inteligência Artificial e seus principais conceitos;
+                            </li>
+                            <li class="card__item"> Aplicação de IA em análise de dados e tomada de decisão;</li>
+                            <li class="card__item">Uso de ferramentas e técnicas para resolução prática de problemas.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__header">
+                        <span>Mini curso de Git&GitHub</span>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body">
+                        <p>
+                            Universidade Católica do Salvador
+                        </p>
+                        <p>
+                            Introdução prática às ferramentas Git e GitHub para controle de versão e colaboração em
+                            projetos de software.
+                        </p>
+                        <ul class="card__list">
+                            <li class="card__item">Criação e gerenciamento de repositórios Git;</li>
+                            <li class="card__item">Controle de versões e histórico de commits;</li>
+                            <li class="card__item">Colaboração em projetos com GitHub.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                        <span>Programação de Computadores com JavaScript</span>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                        <p>
+                            Centro de Pesquisa e Capacitação Tomorrow | UFBA
+                        </p>
+                        <p>
+                            Capacitação em desenvolvimento com JavaScript, voltada para programação web e manipulação do
+                            DOM, aplicando conceitos fundamentais da linguagem.
+                        </p>
+                        <ul class="card__list">
+                            <li class="card__item">Estruturas condicionais, laços e funções;</li>
+                            <li class="card__item">Manipulação do DOM e eventos;</li>
+                            <li class="card__item">Desenvolvimento de lógica para aplicações dinâmicas em páginas web.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contate-me</h2>
+        <p>Estou sempre aberta a novas oportunidades e conexões. Se você tem um projeto em mente ou gostaria de
+            conversar, sinta-se à vontade para entrar em contato.
+        </p>
+        <ul class="menu menu--social">
+            <li>
+                <a class="menu__link" href="https://github.com/emillymaciell" target="_blank">
+                    <i class="menu__icon bi bi-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__link" href="https://www.linkedin.com/in/emilly-maciell/" target="_blank">
+                    <i class="menu__icon bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+        <a href="mailto:emillymaciel.lima@gmail.com">
+            <button class="btn btn--primary">
+                <span class="email">emillymaciel.lima@gmail.com</span>
+            </button>
+        </a>
     </section>
 
     <footer>
