@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -15,14 +15,40 @@
 
 <body>
     <header class="header">
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="home">
+                        <span class="menu__text">Home</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="projetos">
+                        <span class="menu__text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="formacao">
+                        <span class="menu__text">Formação</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contato">
+                        <span class="menu__text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="header__brand">
             <img class="brand__logo" src="assets/images/Emilly Maciel.png" alt="Emilly Maciel">
         </div>
+        <div class="header__toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>
 
-        <i id="toggleTheme" class="bi bi-sun"></i>
     </header>
 
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="home">
@@ -50,7 +76,62 @@
             </li>
         </ul>
     </nav>
-    <h1>Emilly Maciel</h1>
+
+    <main>
+        <div class="main__content1">
+            <h1><b>Interfaces Intuitivas &</b> Desenvolvimento de Software</h1>
+            <p>Emilly Maciel, Salvador-BA, Estudante de Engenharia de Software </p>
+
+            <ul class="menu menu--social">
+                <li>
+                    <a class="menu__link" href=""><i class="menu__icon bi bi-github"></i></a>
+                </li>
+                <li>
+                    <a class="menu__link" href=""><i class="menu__icon bi bi-linkedin"></i></a>
+                </li>
+            </ul>
+
+            <button class="btn btn--primary">
+                <span>Ver Projetos</span>
+                <i class="bi bi-arrow-down-right"></i>
+            </button>
+        </div>
+
+        <div class="main__content2">
+
+        </div>
+    </main>
+
+    <section class="skills">
+        <h2>Ferramentas e Tecnologias</h2>
+        <ul class="skills__list">
+            <li class="skills__item">
+                <img class="skills__logo" src="assets/images/skills/java-original 1.png" alt="Logo Java">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="assets/images/skills/python-original 1.png" alt="Logo Python">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="assets/images/skills/javascript-original 1.png" alt="Logo JavaScript">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="assets/images/skills/html5-original 1.png" alt="Logo HTML">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="assets/images/skills/css3-original 1.png" alt="Logo CSS">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="assets/images/skills/git-original 1.png" alt="Logo Git">
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>
+            © 2025 Emilly Maciel. Todos os Direitos Reservados.
+        </p>
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
